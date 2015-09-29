@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<title>Parallax Scrolling Effect</title>
+<style type="text/css">
+	*{
+	margin: 0px;
+	padding: 0px;
+	}
+	#slide1 {
+		position: relative;
+		z-index: -1
+	}
+    h1 {
+      color: #fff;
+      font-size: 4em;
+      line-height: 1;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px #1e1e1e; 
+      position: relative;
+      top: -500px;
+    }
+	#content {
+		height: 750px;
+		width: 100%;
+		margin-top:-10px; 
+		background-color:#4dbbac;
+		position: relative;
+		z-index: 1;
+	}
+    .container {
+        padding: 100px 50px;
+        max-width: 800px;
+        margin: 0 auto;
+        color:#fff;
+    }
+    .container h2 {
+        font-size:2em;
+        padding-bottom: 50px;
+    }
+     .container p {
+        font-size:1.5em;
+        line-height: 1.5em;
+    }
+</style>
+<script type="text/javascript">
+	var ypos,image;
+	function parallex() {
+		image = document.getElementById('slide1');
+		ypos = window.pageYOffset;
+		image.style.top = ypos * .7+ 'px';
+	}
+	window.addEventListener('scroll', parallex),false;
+
+</script>
+</head>
+
+<body>
+    
+<div id="slide1">
+    <img id="image" src="img/Casual%20Business%20Man%20Cycling%20Through%20City%20In%20A%20Suite.jpg" height="780px" width="100%" />
+    
+</div>
+    
+<div id="content">
+    <h1>Day 2: Parallax scrolling</h1>
+    <div class="container">
+    <h2>What is parallax scrolling?</h2>
+    <p>One big web design trend of the moment is parallax scrolling, which involves the background moving at a slower rate to the foreground, creating a 3D effect as you scroll down the page. It can sometimes be overwhelming, but when used sparingly it can provide a nice, subtle element of depth.</p>
+    </div>
+</div>
+
+	
+</body>
+</html>
