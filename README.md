@@ -1,2 +1,2 @@
 # A-project-a-day
-This is my first GitHub repo
+The birth of this project is inspired by the story of an American artist, Jennifer Dewalt. She launched a “write 180 websites in 180 days” project in 2013 and her story really touches me. I was amazed by her determination. Therefore, I decide to launch my own campaign too. That’s why I start “A project a day”. I would record my works here and share my learning experience. I hope after you reading this blog can also inspire you to do something that you love.
